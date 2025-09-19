@@ -10,7 +10,7 @@ public class NombreHasard {
             int tentative = 0;
             boolean trouve = false;
             System.out.println(nombreSecret);
-            System.out.println("Un nombre entre 1 et 10 a été choisi. À             vous de le deviner !");
+            System.out.println("Un nombre entre 1 et 10 a été choisi. À vous de le deviner !");
             while (tentative < 3 && !trouve) {
                 System.out.print("Tentative " + (tentative + 1) + " : ");
                 int proposition = sc.nextInt();
@@ -21,7 +21,7 @@ public class NombreHasard {
                 }
             }
             if (!trouve) {
-                System.out.println("Échec, nombre non trouvé. Le nombre                 était : " + nombreSecret);
+                System.out.println("Échec, nombre non trouvé. Le nombre était : " + nombreSecret);
             }
             System.out.print("Voulez-vous rejouer ? (oui/non) : ");
             rejouer = sc.next( );
