@@ -12,7 +12,8 @@ public class Publicite extends Courrier {
 
     @Override
     public double affranchir() {
-        if (estInvalide()) return 0;
+        if (estInvalide()) 
+			return 0;
         double montant = 5.0 * poids;
         if (mode == ModeExpedition.EXPRESS) 
         	montant *= 2;
@@ -21,9 +22,11 @@ public class Publicite extends Courrier {
 
     @Override
     public String toString() {
-        return "Publicité [" + mode + "] - " + poids + " g - Dest: " +
+        return "Publicité [" + mode + "] - " + 
+				poids + " g - Dest: " +
                 adresse +
-                " - Affranchissement: " + String.format("%.2f DT", affranchir()) +
+                " - Affranchissement: " + 
+				String.format("%.2f DT", affranchir()) +
                 (estInvalide() ? " -> INVALIDE" : "");
     }
 }
