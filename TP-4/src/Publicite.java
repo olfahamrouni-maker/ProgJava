@@ -29,4 +29,5 @@ public class Publicite extends Courrier {
 				String.format("%.2f DT", affranchir()) +
                 (estInvalide() ? " -> INVALIDE" : "");
     }
+	
 }
